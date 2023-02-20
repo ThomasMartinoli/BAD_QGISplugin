@@ -1,0 +1,31 @@
+# il layer che utilizzo per il seed e per il grow è deciso dai radio buttons nella pagina dell'owa
+        if self.dlg.radioButton_OWA_S_AND.isChecked():
+            SeedLayer= self.OWA_AND.output_path
+
+        if self.dlg.radioButton_OWA_S_almostAND.isCheced():
+            SeedLayer= self.OWA_almostAND.output_path
+
+        if self.dlg.radioButton_OWA_S_AVERAGE.isCheced():
+            SeedLayer= self.OWA_AVERAGE.output_path
+
+        if self.dlg.radioButton_OWA_S_almostOR.isCheced():
+            SeedLayer= self.OWA_almostOR.output_path
+
+        if self.dlg.radioButton_OWA_S_OR.isCheced():
+            SeedLayer= self.OWA_OR.output_path
+
+        if self.dlg.radioButton_OWA_G_AND.isCheced():
+            Grow_Layer= self.OWA_AND.output_path
+
+        if self.dlg.radioButton_OWA_G_almostAND.isCheced():
+            Grow_Layer= self.OWA_almostAND.output_path
+
+        if self.dlg.radioButton_OWA_G_AVERAGE.isCheced():
+            Grow_Layer= self.OWA_AVERAGE.output_path
+
+        if self.dlg.radioButton_OWA_G_almostOR.isCheced():
+            Grow_Layer= self.OWA_almostOR.output_path
+
+        if self.dlg.radioButton_OWA_G_OR.isCheced():
+            Grow_Layer= self.OWA_OR.output_path 
+        
