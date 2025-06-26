@@ -14,9 +14,9 @@ Apply Scene Classification Layer (SCL) masking to remove unwanted classes (e.g.,
 🧮 Ordered Weighted Averaging (OWA) Layer Preview
 Interactively preview OWA composite layers to:
 
-Tune thresholds for seed and grow layer generation.
+Tune thresholds for seed and grow layer generation
 
-Get real-time visual feedback.
+Get real-time visual feedback
 
 ✅ Helps users choose optimal parameters with higher precision.
 
@@ -66,7 +66,10 @@ Dice coefficients and summary tables
 ✅ Ideal for documentation and research publications.
 
 🧭 100% QGIS Native Integration
+
 Built using PyQt for GUI and QGIS Python API
+
+No external libraries like Pandas, or Rasterio required
 
 Fully compatible with QGIS native raster and vector layers
 
@@ -81,4 +84,3 @@ Choose Install from ZIP.
 
 Select the BAD plugin ZIP file.
 
-Click Install Plugin.
