@@ -1,27 +1,53 @@
-# BAD_QGISplugin
-Burned Area Detector is a plugin for Burned Area (BA) Detection from satellite multi-spectral images developed in GIS environment.
-BAD implements a burned area and a burn severity mapping algorithm to produce output geo-products depicting the fire affected areas and the level of damage induced to the vegetation.
-The plugin can be downloaded for free and installed in QGIS using the feature "Install from ZIP"
-#BAD_V.2.0.0
-The BAD 2.0 plugin introduces major enhancements over the original version to streamline the workflow of burned area detection and validation. These include:
+🔥 BAD_QGISplugin – Burned Area Detector
+BAD (Burned Area Detector) is a QGIS plugin for detecting burned areas and burn severity from satellite multispectral imagery, developed within a GIS environment.
+It implements robust algorithms to generate geospatial products that highlight fire-affected regions and evaluate the damage caused to vegetation.
 
-#SCL Band Masking
-Perform masking of unwanted Scene Classification Layer (SCL) classes from Sentinel-2 imagery for both pre-fire and post-fire datasets. This removes noise (e.g., clouds, water, snow) and improves classification accuracy.
+🆓 The plugin is free to download and can be installed in QGIS using the "Install from ZIP" option.
 
-# OWA Layer Preview
-Visually inspect Ordered Weighted Averaging (OWA) layers to help select optimal threshold values for generating seed and grow layers. An interactive preview allows accurate threshold tuning using real-time image feedback.
+🚀 What's New in BAD v2.0.0
+The BAD 2.0 plugin introduces significant enhancements over the original version, streamlining the workflow for burned area detection, severity analysis, and validation.
+
+🛰️ SCL Band Masking
+Mask out unwanted Scene Classification Layer (SCL) classes from Sentinel-2 imagery in both pre-fire and post-fire datasets.
+This process removes noise (e.g., clouds, water, snow) and significantly improves classification accuracy.
+
+👁️ OWA Layer Preview
+Visually inspect Ordered Weighted Averaging (OWA) layers to select optimal threshold values for generating seed and grow layers.
+An interactive preview helps fine-tune thresholds using real-time image feedback.
 
 ✅ Burned Area Map Validation
-Validate the burned area output by comparing with reference data using a confusion matrix. Compute accuracy metrics such as commission/omission errors, Dice coefficient, and generate a pixel-wise Agreement Map.
+Validate the burned area output by comparing it with reference data through a confusion matrix.
+Compute metrics such as:
+
+Commission/Omission Errors
+
+Dice Coefficient
+
+Pixel-wise Agreement Map generation
 
 🔥 Burn Severity Validation
-Validate burn severity output by reclassifying and comparing the severity layer with reference data, including full error matrix evaluation and export of metrics for reporting.
+Assess burn severity by reclassifying and comparing severity layers with reference data.
+Includes:
 
-# Modular Workflow
-Each tab in the plugin works independently—users can start at any stage (e.g., OWA, Region Growing) using intermediate inputs, enhancing flexibility and efficiency.
+Full error matrix computation
 
-📊 Export of Validation Results
-All validation results, including accuracy metrics and confusion matrices, are exportable in .html format for inclusion in reports or publications.
+Exportable accuracy metrics for reporting
 
-🌐 QGIS Native
-Fully integrated within the QGIS environment with a PyQt-based graphical interface and support for native raster and vector operations.
+🧩 Modular Workflow
+Each tab in the plugin operates independently.
+Users can:
+
+Start at any stage (e.g., OWA, Region Growing)
+
+Use intermediate outputs as inputs
+This modularity enhances flexibility and efficiency.
+
+📊 Export Validation Results
+All validation outputs—including confusion matrices and accuracy metrics—are exportable in .html format, ready for reports or scientific publications.
+
+🌐 QGIS Native Integration
+Seamlessly integrated into the QGIS environment with:
+
+A PyQt-based graphical interface
+
+Support for native raster and vector operations
