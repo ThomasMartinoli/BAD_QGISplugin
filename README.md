@@ -4,18 +4,18 @@ It implements robust algorithms to generate geospatial products that highlight f
 
 🆓 The plugin is free to download and can be installed in QGIS using the "Install from ZIP" option.
 
-🚀 What's New in BAD v2.0.0
+ What's New in BAD v2.0.0
 The BAD 2.0 plugin introduces significant enhancements over the original version, streamlining the workflow for burned area detection, severity analysis, and validation.
 
-🛰️ SCL Band Masking
+SCL Band Masking
 Mask out unwanted Scene Classification Layer (SCL) classes from Sentinel-2 imagery in both pre-fire and post-fire datasets.
 This process removes noise (e.g., clouds, water, snow) and significantly improves classification accuracy.
 
-👁️ OWA Layer Preview
+OWA Layer Preview
 Visually inspect Ordered Weighted Averaging (OWA) layers to select optimal threshold values for generating seed and grow layers.
 An interactive preview helps fine-tune thresholds using real-time image feedback.
 
-✅ Burned Area Map Validation
+Burned Area Map Validation
 Validate the burned area output by comparing it with reference data through a confusion matrix.
 Compute metrics such as:
 
@@ -25,7 +25,7 @@ Dice Coefficient
 
 Pixel-wise Agreement Map generation
 
-🔥 Burn Severity Validation
+Burn Severity Validation
 Assess burn severity by reclassifying and comparing severity layers with reference data.
 Includes:
 
@@ -33,7 +33,7 @@ Full error matrix computation
 
 Exportable accuracy metrics for reporting
 
-🧩 Modular Workflow
+Modular Workflow
 Each tab in the plugin operates independently.
 Users can:
 
