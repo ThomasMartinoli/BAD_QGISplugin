@@ -1,53 +1,84 @@
-🔥 BAD_QGISplugin – Burned Area Detector
-BAD (Burned Area Detector) is a QGIS plugin for detecting burned areas and burn severity from satellite multispectral imagery, developed within a GIS environment.
-It implements robust algorithms to generate geospatial products that highlight fire-affected regions and evaluate the damage caused to vegetation.
+🔥 BAD_QGISplugin – Burned Area Detector v2.0.0
+BAD (Burned Area Detector) is a QGIS plugin for detecting burned areas and mapping burn severity from satellite multispectral imagery (e.g., Sentinel-2).
+Developed entirely within the QGIS environment, BAD produces geospatial outputs that highlight fire-affected zones and quantify vegetation damage.
 
-🆓 The plugin is free to download and can be installed in QGIS using the "Install from ZIP" option.
+🆓 The plugin can be downloaded for free and installed in QGIS using Plugins > Manage and Install Plugins > Install from ZIP.
 
- What's New in BAD v2.0.0
-The BAD 2.0 plugin introduces significant enhancements over the original version, streamlining the workflow for burned area detection, severity analysis, and validation.
+🌟 Key Features in Version 2.0.0
+BAD v2.0.0 introduces major improvements to enhance workflow flexibility, accuracy, and usability.
 
-SCL Band Masking
-Mask out unwanted Scene Classification Layer (SCL) classes from Sentinel-2 imagery in both pre-fire and post-fire datasets.
-This process removes noise (e.g., clouds, water, snow) and significantly improves classification accuracy.
+🛰️ SCL Band Masking
+Apply Scene Classification Layer (SCL) masking to remove unwanted classes (e.g., cloud, water, snow) in pre-fire and post-fire Sentinel-2 images.
+✅ Improves classification quality by eliminating noise and irrelevant pixels.
 
-OWA Layer Preview
-Visually inspect Ordered Weighted Averaging (OWA) layers to select optimal threshold values for generating seed and grow layers.
-An interactive preview helps fine-tune thresholds using real-time image feedback.
+🧮 Ordered Weighted Averaging (OWA) Layer Preview
+Interactively preview OWA composite layers to:
 
-Burned Area Map Validation
-Validate the burned area output by comparing it with reference data through a confusion matrix.
-Compute metrics such as:
+Tune thresholds for seed and grow layer generation.
 
-Commission/Omission Errors
+Get real-time visual feedback.
+
+✅ Helps users choose optimal parameters with higher precision.
+
+🗺️ Burned Area Validation
+Compare the generated burned area map with reference data to compute:
+
+Confusion Matrix
+
+Commission & Omission Errors
 
 Dice Coefficient
 
-Pixel-wise Agreement Map generation
+Pixel-wise Agreement Map
 
-Burn Severity Validation
-Assess burn severity by reclassifying and comparing severity layers with reference data.
-Includes:
+✅ Offers detailed accuracy assessment and spatial agreement visualization.
 
-Full error matrix computation
+🔥 Burn Severity Validation
+Evaluate burn severity outputs by:
 
-Exportable accuracy metrics for reporting
+Reclassifying severity levels
 
-Modular Workflow
-Each tab in the plugin operates independently.
+Comparing them with reference data
+
+Generating a full error/confusion matrix
+
+✅ Suitable for advanced fire damage analysis and reporting.
+
+⚙️ Modular Workflow Design
+Each tab in the plugin is independent.
 Users can:
 
-Start at any stage (e.g., OWA, Region Growing)
+Start from any stage (e.g., OWA, Region Growing)
 
-Use intermediate outputs as inputs
-This modularity enhances flexibility and efficiency.
+Use intermediate files as inputs
 
-📊 Export Validation Results
-All validation outputs—including confusion matrices and accuracy metrics—are exportable in .html format, ready for reports or scientific publications.
+✅ Flexible, user-driven workflow suited for different project needs.
 
-🌐 QGIS Native Integration
-Seamlessly integrated into the QGIS environment with:
+📁 Exportable Validation Reports
+All validation results can be exported in .html format, including:
 
-A PyQt-based graphical interface
+Confusion matrices
 
-Support for native raster and vector operations
+Accuracy metrics
+
+Dice coefficients and summary tables
+
+✅ Ideal for documentation and research publications.
+
+🧭 100% QGIS Native Integration
+Built using PyQt for GUI and QGIS Python API
+
+Fully compatible with QGIS native raster and vector layers
+
+✅ Lightweight, fast, and easy to install.
+
+📦 Installation
+Open QGIS.
+
+Go to Plugins > Manage and Install Plugins.
+
+Choose Install from ZIP.
+
+Select the BAD plugin ZIP file.
+
+Click Install Plugin.
